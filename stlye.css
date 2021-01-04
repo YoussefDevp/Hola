@@ -1,0 +1,117 @@
+:root {
+    --primary-color:#008891;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER SECTION */
+
+header {
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url('./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg')center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    /* justify-content:center; */
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    font-size: 3rem;
+    color:var(--primary-color);
+}
+
+header nav a {
+    text-decoration: none;
+    background:var(--primary-color);
+    color: #ffffff;
+    padding: .5rem 2rem;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    background: #ffffff;
+    color:var(--primary-color);
+    transition: .3s ease-out;
+}
+
+header > h1 {
+    margin-top: 10rem;
+    font-size: 3rem;
+    width: 30%;
+}
+
+header h1,h2,p {
+    color: #ffffff;
+}
+
+header h2,p {
+    line-height: 2.3;
+    font-weight: 600;
+}
+
+header p {
+    margin-bottom: 1rem;
+}
+
+header input {
+    padding: 1rem 2.5rem;
+    border-top-left-radius:25px ;
+    border-bottom-left-radius:25px ;
+    border: none;
+}
+
+header input::placeholder {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+header button {
+    padding: 1rem 2.5rem;
+    border-top-right-radius:25px ;
+    border-bottom-right-radius:25px;
+    border:none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 600
+}
+
+header button:hover {
+    background: #ffffff;
+    color:var(--primary-color);
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+/* INFORMATION SECTION  */
+
+hr {
+    padding: .2rem;
+    border: none;
+    background: var(--primary-color);
+}
+
+.cards {
+    background: #0f3057;
+    display: flex;
+}
+
+
+
