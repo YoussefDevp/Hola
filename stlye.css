@@ -34,7 +34,18 @@ button:focus {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: 600
+}
 
+.input::placeholder {
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    color:var(--primary-color);
+    transition: .3s ease-out;
+    cursor: pointer;
 }
 
 * {
@@ -48,7 +59,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER SECTION */
+/** HEADER SECTION */
 
 header {
     background:linear-gradient(180deg, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url('./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg')center center/cover;
@@ -70,9 +81,11 @@ header nav .logo {
     font-size: 3rem;
     color:var(--primary-color);
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    text-decoration: none;
+    font-weight: 600;
 }
 
-header nav a {
+header nav a:nth-of-type(2) {
     text-decoration: none;
     background:var(--primary-color);
     color:var(--secondary-color);
@@ -81,7 +94,7 @@ header nav a {
     font-weight: 600;
 }
 
-header nav a:hover {
+header nav a:hover:nth-of-type(2) {
     background:var(--secondary-color);
     color:var(--primary-color);
     transition: .3s ease-out;
@@ -107,24 +120,7 @@ header p {
     margin-bottom: 1rem;
 }
 
-
-header input::placeholder {
-    color: var(--primary-color);
-    font-style: italic;
-}
-
-header button {
-    
-}
-
-header button:hover {
-    background: var(--secondary-color);
-    color:var(--primary-color);
-    transition: .3s ease-out;
-    cursor: pointer;
-}
-
-/* INFORMATION SECTION  */
+/** INFORMATION SECTION  **/
 
 hr {
     padding: .2rem;
@@ -143,6 +139,13 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-section .cards:nth-of-type(2) {
+    flex: none;
+}
+.card-section .cards:nth-of-type(2)  {
+    order:2;
 }
 
 .card-section .cards .content {
@@ -168,7 +171,7 @@ hr {
 }
 
 
-/* QUESTION SESCTION  */
+/** QUESTION SESCTION  **/
 
 
 .Questions {
@@ -192,6 +195,41 @@ hr {
     border-radius: 5px;
     box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
 }
+
+/** FOOTER **/
+
+footer {
+    padding: 3rem;
+   background: var(--third-color);
+   color: var(--secondary-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+footer .links {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .links .links-list {
+    list-style: none;
+    line-height: 2;
+}
+
+footer .links .links-list a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/**** Login Page ****/
+
+
+
+
+
+
 
 
 
