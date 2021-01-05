@@ -1,10 +1,22 @@
 :root {
     --primary-color:#008891;
+    --secondary-color:#ffffff;
+    --third-color:#0f3057;
 }
 
 input:focus, 
 button:focus {
     outline: none;
+}
+
+.primary_heading {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.paragraph {
+
 }
 
 * {
@@ -27,7 +39,6 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    /* justify-content:center; */
 }
 
 header nav {
@@ -46,14 +57,14 @@ header nav .logo {
 header nav a {
     text-decoration: none;
     background:var(--primary-color);
-    color: #ffffff;
+    color:var(--secondary-color);
     padding: .5rem 2rem;
     border-radius: 15px;
     font-weight: 600;
 }
 
 header nav a:hover {
-    background: #ffffff;
+    background:var(--secondary-color);
     color:var(--primary-color);
     transition: .3s ease-out;
 }
@@ -65,7 +76,7 @@ header > h1 {
 }
 
 header h1,h2,p {
-    color: #ffffff;
+    color:var(--secondary-color);
 }
 
 header h2,p {
@@ -95,12 +106,12 @@ header button {
     border-bottom-right-radius:25px;
     border:none;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--secondary-color);
     font-weight: 600
 }
 
 header button:hover {
-    background: #ffffff;
+    background: var(--secondary-color);
     color:var(--primary-color);
     transition: .3s ease-out;
     cursor: pointer;
@@ -117,7 +128,7 @@ hr {
 
 .card-section {
     padding: 1rem;
-    background:#0f3057;
+    background:var(--third-color);
     display: flex;
     flex-direction: column;
 }
@@ -135,11 +146,10 @@ hr {
 }
 
 .card-section .cards .content h1,p {
-    color:#ffffff;
+    color:var(--secondary-color);
 }
 
 .card-section .cards .content h1 {
-    font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
@@ -148,10 +158,34 @@ hr {
     font-weight: 400;
 }
 
+.card-section .cards img {
+    width: 600px;
+}
+
 
 /* QUESTION SESCTION  */
 
 
-.Question {
+.Questions {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--third-color);
+    padding: 3rem;
 }
+
+.Questions h1{
+    margin-bottom: 2rem;
+}
+
+.Questions h3 {
+    background:#e7e7de;
+    padding: 1rem 2rem ;
+    width: 40%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+}
+
+
