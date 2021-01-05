@@ -115,18 +115,40 @@ hr {
 }
 
 
-section {
+.card-section {
     padding: 1rem;
     background:#0f3057;
     display: flex;
     flex-direction: column;
 }
 
-section .cards {
+
+.card-section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.card-section .cards .content {
+    width: 50%;
+    margin-right:2rem ;
+}
+
+.card-section .cards .content h1,p {
+    color:#ffffff;
+}
+
+.card-section .cards .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-section .cards .content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* QUESTION SESCTION  */
 
 
