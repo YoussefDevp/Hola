@@ -33,7 +33,9 @@ button:focus {
     border:none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-weight: 600
+    font-weight: 600;
+    position: relative;
+    left:-4px;
 }
 
 .input::placeholder {
@@ -139,13 +141,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.card-section .cards:nth-of-type(2) {
-    flex: none;
-}
-.card-section .cards:nth-of-type(2)  {
-    order:2;
 }
 
 .card-section .cards .content {
