@@ -1,226 +1,235 @@
 :root {
-    --primary-color:#008891;
-    --secondary-color:#ffffff;
-    --third-color:#0C1216;
+  --primary-color: #008891;
+  --secondary-color: #ffffff;
+  --third-color: #0c1216;
 }
 
-input:focus, 
+input:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 .primary_heading {
-    font-size: 3rem;
-    color: var(--secondary-color);
-    font-weight: 600;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
-.paragraph {
+/*.paragraph {
 
 }
+*/
 
 .email {
-    padding: 1rem 2.5rem;
-    border-top-left-radius:25px ;
-    border-bottom-left-radius:25px ;
-    border: none;
+  padding: 1rem 2.5rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border: none;
 }
 
 .btn {
-    padding: 1rem 2.5rem;
-    border-top-right-radius:25px;
-    border-bottom-right-radius:25px;
-    border:none;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-weight: 600
+  padding: 1rem 2.5rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 .input::placeholder {
-    color: var(--primary-color);
-    font-style: italic;
+  color: var(--primary-color);
+  font-style: italic;
 }
 
 .btn:hover {
-    background: var(--secondary-color);
-    color:var(--primary-color);
-    transition: .3s ease-out;
-    cursor: pointer;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  transition: 0.3s ease-out;
+  cursor: pointer;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /** HEADER SECTION */
 
 header {
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url('./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg')center center/cover;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.568),
+      rgba(0, 0, 0, 0.568)
+    ),
+    url("./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg")
+      center center/cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 header nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav .logo {
-    font-size: 3rem;
-    color:var(--primary-color);
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    text-decoration: none;
-    font-weight: 600;
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 header nav a:nth-of-type(2) {
-    text-decoration: none;
-    background:var(--primary-color);
-    color:var(--secondary-color);
-    padding: .5rem 2rem;
-    border-radius: 15px;
-    font-weight: 600;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  font-weight: 600;
 }
 
 header nav a:hover:nth-of-type(2) {
-    background:var(--secondary-color);
-    color:var(--primary-color);
-    transition: .3s ease-out;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  transition: 0.3s ease-out;
 }
 
 header > h1 {
-    margin-top: 10rem;
-    font-size: 3rem;
-    width: 30%;
-    text-align: center;
+  margin-top: 10rem;
+  font-size: 3rem;
+  width: 30%;
+  text-align: center;
 }
 
-header h1,h2,p {
-    color:var(--secondary-color);
+header h1,
+h2,
+p {
+  color: var(--secondary-color);
 }
 
-header h2,p {
-    line-height: 2.3;
-    font-weight: 600;
+header h2,
+p {
+  line-height: 2.3;
+  font-weight: 600;
 }
 
 header p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /** INFORMATION SECTION  **/
 
 hr {
-    padding: .2rem;
-    border: none;
-    background: var(--primary-color);
+  padding: 0.2rem;
+  border: none;
+  background: var(--primary-color);
 }
 
 .card-section {
-    padding: 1rem;
-    background:var(--third-color);
-    display: flex;
-    flex-direction: column;
+  padding: 1rem;
+  background: var(--third-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .card-section .cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-section .cards:nth-of-type(2) {
-    flex: none;
+  flex: none;
 }
-.card-section .cards:nth-of-type(2)  {
-    order:2;
+.card-section .cards:nth-of-type(2) {
+  order: 2;
 }
 
 .card-section .cards .content {
-    width: 50%;
-    margin-right:2rem ;
+  width: 50%;
+  margin-right: 2rem;
 }
 
-.card-section .cards .content h1,p {
-    color:var(--secondary-color);
+.card-section .cards .content h1,
+p {
+  color: var(--secondary-color);
 }
 
 .card-section .cards .content h1 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card-section .cards .content p {
-    font-size: 1.5rem;
-    font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .card-section .cards img {
-    width: 600px;
+  width: 600px;
 }
-
 
 /** QUESTION SESCTION  **/
 
-
 .Questions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--third-color);
-    padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--third-color);
+  padding: 3rem;
 }
 
-.Questions h1{
-    margin-bottom: 2rem;
+.Questions h1 {
+  margin-bottom: 2rem;
 }
 
 .Questions h3 {
-    background:#e7e7de;
-    padding: 1rem 2rem ;
-    width: 40%;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+  background: #e7e7de;
+  padding: 1rem 2rem;
+  width: 40%;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 10px 10px 28px -19px rgba(0, 0, 0, 0.75);
 }
 
 /** FOOTER **/
 
 footer {
-    padding: 3rem;
-   background: var(--third-color);
-   color: var(--secondary-color);
+  padding: 3rem;
+  background: var(--third-color);
+  color: var(--secondary-color);
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
 
 footer .links {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer .links .links-list {
-    list-style: none;
-    line-height: 2;
+  list-style: none;
+  line-height: 2;
 }
 
 footer .links .links-list a {
-    text-decoration: none;
-    color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 /**** Login Page ****/
