@@ -220,6 +220,14 @@ footer .links .links-list a {
 
 /**** Login Page ****/
 
+.container {
+    height: 150vh;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url('./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg')center center/cover;
+}
+
+.container footer {
+    opacity: 1;
+}
 
 
 
