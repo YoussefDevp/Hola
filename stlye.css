@@ -21,6 +21,7 @@ button:focus {
 }
 
 .primary_heading {
+  width: 700px;
   font-size: 3rem;
   color: var(--secondary-color);
   font-weight: 600;
@@ -32,22 +33,26 @@ button:focus {
 */
 
 .email {
-  padding: 1rem 2.5rem;
+  width: 250px;
+  padding: 1rem ;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border: none;
 }
 
 .btn {
-    padding: 1rem 2.5rem;
+    width:150px ;
+    padding: 1rem .5rem;
     border-top-right-radius:25px;
     border-bottom-right-radius:25px;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
     border:none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: 600;
     position: relative;
-    left:-4px;
+    left:-5px;
 }
 
 .input::placeholder {
@@ -159,7 +164,14 @@ hr {
   flex-direction: column;
 }
 
+.card-section hr {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.1rem;
+}
+
 .card-section .cards {
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +219,8 @@ p {
   background: #e7e7de;
   color: var(--third-color);
   padding: 1rem 2rem;
-  width: 40%;
+  width: 500px;
+  margin: 0 auto;
   margin-bottom: 1rem;
   border-radius: 5px;
   box-shadow: 10px 10px 28px -19px rgba(0, 0, 0, 0.75);
@@ -266,6 +279,7 @@ footer .links .links-list a {
 }
 
 .container form {
+    width: 450px;
     display: flex;
     flex-direction: column;
     padding: 4rem;
@@ -280,15 +294,21 @@ footer .links .links-list a {
 }
 
 .container form input,button {
-    padding: .7rem 4.5rem ;
+    padding: .7rem .5rem ;
     border: none;
     margin-bottom: 1rem;
     border-radius: 5px;
 }
 
+
+/* .container form input,button {
+
+} */
+
 .container form button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    font-weight: 700;
 }
 
 .container form button:hover {
@@ -299,7 +319,7 @@ footer .links .links-list a {
 }
 
 .container form a {
-    text-decoration:none;
+    /* text-decoration:none; */
     color: var(--secondary-color);
 }
 
@@ -307,6 +327,8 @@ footer .links .links-list a {
     width: 100%;
     opacity: .7;
 }
+
+
 
 
 
