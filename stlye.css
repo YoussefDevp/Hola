@@ -299,8 +299,10 @@ footer .links .links-list a {
     margin-bottom: 1rem;
     border-radius: 5px;
 }
-
-
+.checkbox span {
+  color:#e7e7dec0;
+  font-style: italic;
+}
 /* .container form input,button {
 
 } */
