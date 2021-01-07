@@ -9,6 +9,17 @@ button:focus {
   outline: none;
 }
 
+
+
+.login {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
 .primary_heading {
   font-size: 3rem;
   color: var(--secondary-color);
@@ -28,7 +39,6 @@ button:focus {
 }
 
 .btn {
-<<<<<<< HEAD
     padding: 1rem 2.5rem;
     border-top-right-radius:25px;
     border-bottom-right-radius:25px;
@@ -38,15 +48,6 @@ button:focus {
     font-weight: 600;
     position: relative;
     left:-4px;
-=======
-  padding: 1rem 2.5rem;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border: none;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  font-weight: 600;
->>>>>>> fa0a048d52bdebc6325a371567a66bf2f356f7b9
 }
 
 .input::placeholder {
@@ -96,7 +97,7 @@ header nav {
   align-items: center;
 }
 
-header nav .logo {
+.logo {
   font-size: 3rem;
   color: var(--primary-color);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -163,16 +164,6 @@ hr {
   align-items: center;
 }
 
-<<<<<<< HEAD
-=======
-.card-section .cards:nth-of-type(2) {
-  flex: none;
-}
-.card-section .cards:nth-of-type(2) {
-  order: 2;
-}
-
->>>>>>> fa0a048d52bdebc6325a371567a66bf2f356f7b9
 .card-section .cards .content {
   width: 50%;
   margin-right: 2rem;
@@ -250,13 +241,83 @@ footer .links .links-list a {
 /**** Login Page ****/
 
 .container {
-    height: 150vh;
-    background:linear-gradient(180deg, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), url('./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg')center center/cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+     height: 100vh;
+     background:linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.568),
+    rgba(0, 0, 0, 0.568)
+  ),
+  url("./Resources/images/Temporada-2-y-spin-offs-de-The-Witcher-Noticias-y-actualizaciones.jpg")
+    center center/cover;
+}
+
+.container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container nav .login:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    border-radius: 5px;
+    backdrop-filter: blur( 2.5px );
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+}
+
+.container form h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container form input,button {
+    padding: .7rem 4.5rem ;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.container form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.container form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.container form a {
+    text-decoration:none;
+    color: var(--secondary-color);
 }
 
 .container footer {
-    opacity: 1;
+    width: 100%;
+    opacity: .7;
 }
+
+
+
+
+
+
 
 
 
