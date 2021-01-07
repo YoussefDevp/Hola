@@ -71,6 +71,7 @@ button:focus {
 body {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
+  color:white
 }
 
 /** HEADER SECTION */
@@ -204,6 +205,7 @@ p {
 
 .Questions h3 {
   background: #e7e7de;
+  color: var(--third-color);
   padding: 1rem 2rem;
   width: 40%;
   margin-bottom: 1rem;
