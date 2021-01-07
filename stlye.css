@@ -265,13 +265,6 @@ footer .links .links-list a {
   align-items: center;
 }
 
-.container nav .login:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    transition: .3s ease-out;
-    cursor: pointer;
-}
-
 .container form {
     display: flex;
     flex-direction: column;
