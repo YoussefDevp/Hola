@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stlye.css">
+    <script src="./app.js"></script>
     <title>| Login</title>
 </head>
 <body>
@@ -15,9 +16,11 @@
 
     <form>
         <h1>Sign In</h1>
-        <input type="email" name="" id="" placeholder="Email or phone number">
-        <input type="password" placeholder="Password">
-        <button type="submit">
+        <input type="email" id="email" placeholder="Email or phone number">
+        <input type="password" id="password" placeholder="Password">
+        <h1 id="textEmail"></h1>
+        <h1 id="textPassword"></h1>
+        <button onclick="login()" type="submit">
             Sign In
         </button>
         <div class="checkbox">
@@ -64,4 +67,5 @@
 </div>
 
     
-</body></html>
+</body>
+</html>

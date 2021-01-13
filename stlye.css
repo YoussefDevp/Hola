@@ -293,6 +293,10 @@ footer .links .links-list a {
     text-align: center;
 }
 
+.container form #text {
+  color: var(--secondary-color);
+}
+
 .container form input,button {
     padding: .7rem .5rem ;
     border: none;
