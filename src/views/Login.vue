@@ -2,7 +2,7 @@
   <div class="about">
     <div class="container">
       <nav id="nav-bar">
-        <a class="logo" href="./home">HOLA</a>
+        <a class="logo" href="./">HOLA</a>
       </nav>
 
       <form>

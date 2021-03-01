@@ -2,7 +2,7 @@
   <div class="home">
     <header id="header">
       <nav id="nav">
-        <a class="logo" href="./home">HOLA</a>
+        <a class="logo" href="./">HOLA</a>
         <a href="./login">Sign in</a>
       </nav>
       <h1 class="primary_heading">Unlimited movies, TV shows, and more.</h1>
