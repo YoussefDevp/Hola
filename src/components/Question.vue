@@ -18,7 +18,6 @@
     <h3>What can i watch on HOLA</h3>
     <!-- <p>HOLA has an extensive library of feature films, documentaries, TV shows, anime, award-winning HOLA originals, and more. Watch as much as you want, anytime you want.</p> -->
 
-    // eslint-disable-next-line prettier/prettier
     <p>
       Ready to watch? Enter your email to create or restart your membership.
     </p>
@@ -29,6 +28,12 @@
     </form>
   </section>
 </template>
+
+<script>
+export default {
+  name: "Question"
+};
+</script>
 
 <style scoped>
 .Questions {

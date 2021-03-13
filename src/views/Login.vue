@@ -2,9 +2,8 @@
   <div class="about">
     <div class="container">
       <nav id="nav-bar">
-        <a class="logo" href="./">HOLA</a>
+        <logo> </logo>
       </nav>
-
       <form>
         <h1>Sign In</h1>
         <input type="email" name="" id="" placeholder="Email or phone number" />
@@ -20,41 +19,23 @@
         <a href="#">Need help?</a>
         <a href="#"> I forgot my password</a>
       </form>
-      <footer>
-        <p>Questions? Call xxx xxx xxx</p>
-
-        <section class="links">
-          <ul class="links-list">
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Investor Relations</a></li>
-            <li><a href="">Ways to Watch</a></li>
-            <li><a href="">Corporate Information</a></li>
-            <li><a href=""> Originals</a></li>
-          </ul>
-          <ul class="links-list">
-            <li>Account</li>
-            <li>Redeem Gift Cards</li>
-            <li>Privacy</li>
-            <li>Speed Test</li>
-          </ul>
-          <ul class="links-list">
-            <li>Help Center</li>
-            <li>Jobs</li>
-            <li>Terms of Use</li>
-            <li>Contact Us</li>
-            <li>Buy Gift Cards</li>
-          </ul>
-          <ul class="links-list">
-            <li>Media Center</li>
-            <li>Privacy</li>
-            <li>Cookie Preferences</li>
-            <li>Legal Notices</li>
-          </ul>
-        </section>
-      </footer>
     </div>
+    <footers></footers>
   </div>
 </template>
+
+<script>
+import Logo from "../components/Logo";
+import Footers from "../components/Footers";
+
+export default {
+  name: "Login",
+  components: {
+    Logo,
+    Footers
+  }
+};
+</script>
 
 <style lang="css" scoped>
 .container {
@@ -63,7 +44,7 @@
       rgba(0, 0, 0, 0.568),
       rgba(0, 0, 0, 0.568)
     ),
-    url("../assets/header_img.jpg") center center/cover;
+    url("../assets/header_img.jpg") top center/cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +67,8 @@
   padding: 4rem;
   border-radius: 5px;
   backdrop-filter: blur(2.5px);
-  box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+  box-shadow: 0 8px 32px 0 rgb(15, 15, 15);
+  margin-bottom: 2rem;
 }
 
 .container form h1 {
@@ -129,11 +111,5 @@ button {
 .container form a {
   /* text-decoration:none; */
   color: var(--secondary-color);
-}
-
-.container footer {
-  width: 100%;
-  opacity: 0.7;
-  border-radius: 15px;
 }
 </style>
